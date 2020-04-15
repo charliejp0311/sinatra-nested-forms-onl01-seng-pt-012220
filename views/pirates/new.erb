@@ -4,22 +4,17 @@
     Pirate name: <input type="text" name="pirate[name]">
     Pirate weight: <input type="text" name="pirate[weight]">
     Pirate height: <input type="text" name="pirate[height]">
-    <% 2.times do %>
-      <% i=1 %>
-      <fieldset name="ship_name_<%=i%>">
-        <li>
-          <label>Name</label>
-          <input name="pirate[ships][][name]"/></li>
-        <li>
-          <label>Type</label>
-          <input name="pirate[ships][][type]" />
-        </li>
-        <li>
-          <label>Booty</label>
-          <input name="pirate[ships][][booty]" />
-        </li>
-      </fieldset>
-      <%i+=1%>
-    <% end %>
+    <label name="ship_name_1">Name</label>
+    <input name="pirate[ships][][name]"/></li>
+    <label name="ship_type_1">Type</label>
+    <input name="pirate[ships][][type]" />
+    <label name="ship_booty_1">Booty</label>
+    <input name="pirate[ships][][booty]" />
+    <label name="ship_name_2">Name</label>
+    <input name="pirate[ships][][name]"/></li>
+    <label name="ship_type_2">Type</label>
+    <input name="pirate[ships][][type]" />
+    <label name="ship_booty_2">Booty</label>
+    <input name="pirate[ships][][booty]" />
   <input type="submit">
 </form>
